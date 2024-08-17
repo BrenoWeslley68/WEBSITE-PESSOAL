@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    a{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    #con{
+        background-color: #A52A2A;
+        padding: 5px 10px;
+        border-radius: 20px;
+        
+    }
+    
+    
+    
+}
