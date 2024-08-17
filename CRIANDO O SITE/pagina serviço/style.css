@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+:root{
+    --primary-color: #009CF5;
+    --second-color: #2B3033;
+}
+body{
+    max-width: 100vw;
+    background-image: linear-gradient(to bottom, rgb(71, 71, 71),rgb(177, 177, 177));
+}
+div#head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1em;
+    line-height: 30px;
+    border: solid 2px black; 
+}
+figcaption{
+    margin: 10px;
+    padding: 5px;
+}
+div#titulo{
+    background-color: #C8DBE7;
+    color: black;
+    text-align: center;
+    padding-top: 5px;
+    border: solid 2px black;   
+}
+#menu{
+    background-color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+li {
+    list-style: none;
+    margin: 15px 5px ;
+    
+}
+li > a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 15px
+}
+
+article{
+    margin: 40px 50px 0px 50px;
+    background-color: var(--second-color);
+    color: white;
+    padding: 20px;
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+article > p {
+    line-height: 23px;
+}
+section#main{
+    margin-left: 80px;
+}
+div.artigo{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 0px -9px -9px -9px;
+    border: solid 1px black;
+    line-height: 28px;
+    font-weight: normal;
+    
+}
+div.artigo > p {
+    text-shadow: none;
+}
+section.titulo{
+    
+    background-color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px  0px 0px -10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    max-width: 80%;
+    
+
+}
+
+h2{
+    margin: 0px 0px 20px 0px;
+}
+
+    
+   
+
+footer{
+    margin: 30px 50px 0px 0px;
+    
+    
+}
+a {
+    color: black;
+    font-weight: bold;
+}
+#redes{
+   margin:  10px 0px 0px 50px;
+   background-color: var(--primary-color);
+
+   
+}
+#redes > p > a {
+    color: white;
+}
+#copy{
+    display: block;
+    margin: 0px 0px 10px 50px;
+    text-align:center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+p{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+}
+
+
+
+
+

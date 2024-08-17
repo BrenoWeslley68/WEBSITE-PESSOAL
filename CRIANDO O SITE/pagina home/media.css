@@ -1,0 +1,22 @@
+@media screen and (min-width: 1000px ) {
+    body{
+        display: block;
+        max-width: 1200px;
+        margin: auto;
+        background-image: linear-gradient(to bottom, rgb(71, 71, 71),rgb(177, 177, 177));
+        
+    }
+    article{
+        margin: 40px 300px 0px 300px;;
+    }
+    footer{
+        margin: 30px 300px 0px 300px;
+    }
+    aside{
+        margin: 0px 0px 20px 0px;
+    }
+    #copy{
+        margin: 0px 0px 10px 0px;
+    }
+    
+}
