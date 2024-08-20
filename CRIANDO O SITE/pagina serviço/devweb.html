@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu website</title>
+    <title>Desenvolvimento web</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
@@ -27,7 +27,10 @@
                 <ul>
                     <li><a href="../pagina home/home.html">Home</a></li>
                     <li><a href="../pagina sobre/sobre.html">Sobre</a></li>
-                    <li><a href="../pagina serviço/projetos.html">Projetos</a></li>
+                    <li  onclick="isubmenu()" style="cursor: pointer;" id="li">Projetos
+                    <div id="submenu"  style="display: none;" ><a href="devweb.html">Desenvolvimento WEB:</a>
+                    <a href="inteligencia.html">Desenvolvimento IA:</a>
+                <a href="algoritmo.html">Desenvolvimento de algorítmo:</a></div></li>
                     <li><a href="">Contato</a></li>
                     
                 </ul>
@@ -37,7 +40,7 @@
     <main>
         <article>
             <h2>Bem vindos aos meus projeto</h2>
-            <p>Aqui você encontrará deversos trabalhos e conteúdos meus, como pequenos projetos de site, inteligência artificial e algorítmo, conforme eu for avançando em meus estudos eu irei atualizar essa página, também podem acompanhar meu trabalho no GitHub.</p>
+            <p>Aqui você encontrará deversos trabalhos e conteúdos meus relacionados a Dev Web, como pequenos projetos de site, conforme eu for avançando em meus estudos eu irei atualizar essa página, também podem acompanhar meu trabalho no GitHub.</p>
 
             <section id="main">
                 
@@ -50,22 +53,10 @@
                             <p><a href="../PORTFÓLIO/desafio2/desafioaberto.html">Home site Responsiva</a></p>
                             <p><a href="../PORTFÓLIO/desafio5/index.html">Página de Planos de assinaturas</a></p>
                             <p><a href="../PORTFÓLIO/desafio4/index.html">Pagina simples de formulário</a></p>
+                            <p><a href="../PORTFÓLIO/desafio6/index.html">Pagina de formulário com JS</a></p>
                         </div>
                     </section> 
-                    <section class="titulo">
-                        <p>Desenvolvimento IA:</p>
                    
-                        <div class = "artigo">
-                            <p>No futuro, quero poder desenvolver diversos projetos envolvendo IA, mas primeiro preciso aprender Python e machine learning</p>
-                        </div>
-                    </section>
-                    <section class="titulo">
-                        <p>Desenvolvimento de algorítmo:</p>
-                  
-                        <div class = "artigo">
-                            <p>Acredito que essa seção ficará um tempo vazio, pois é a minha menor prioridade a curto prazo</p>
-                        </div>
-                    </section>
             </section>
 
             </article>
@@ -87,6 +78,8 @@
             </div>
 
         </footer>
+
+        <script src="script.js"></script>
         
     
     

@@ -21,5 +21,7 @@ function Cadastrar (){
 }
 function Limpar() {
    let res = document.getElementById('res')
+    {
    res.innerHTML = ''
+}
 }

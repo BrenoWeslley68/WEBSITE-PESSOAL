@@ -78,12 +78,13 @@ li#li:hover {
 #submenu {
     display: none; /* Oculta o submenu por padrão */
     position: absolute; /* Posiciona o submenu de forma absoluta em relação ao item pai (li) */
-    background-color: black;
+    background-color: var(--primary-color);
     padding: 10px;
     border-radius: 10px;
     top: 100%; /* Posiciona o submenu logo abaixo do item de menu */
     left: 0;
     z-index: 1000; /* Garante que o submenu apareça sobre outros elementos */
+    width: 200px;
 }
 
 li:hover #submenu {
@@ -94,14 +95,14 @@ li:hover #submenu {
     color: white;
     text-decoration: none;
     display: block;
-    margin: 5px 0;
+    margin: 20px 0;
     /* Estiliza os links dentro do submenu: cor branca, sem sublinhado, exibido como bloco e com margem */
 }
 
 #submenu a:hover {
     background-color: var(--primary-color);
     border-radius: 5px;
-    padding: 5px;
+    margin-left: 20px;
     /* Estiliza os links dentro do submenu quando o mouse passa sobre eles: muda a cor de fundo e adiciona padding */
 }
 
@@ -119,7 +120,7 @@ article {
     margin: 10px 0px 10px 10px;
 }
 article{
-    margin: 40px 50px 0px 50px;
+    margin: 40px 10px 0px 10px;
     background-color: var(--second-color);
     color: white;
     padding: 20px;
@@ -134,12 +135,12 @@ article > p {
    
 }
 footer{
-    margin: 30px 50px 0px 0px;
+    margin: 30px 10px 0px 0px;
     
     
 }
 aside{
-    margin: 10px 0px 20px 50px;
+    margin: 10px 0px 20px 10px;
     padding: 20px;
     background-color: var(--primary-color);
     color: white;
@@ -167,7 +168,7 @@ p.projetos{
 
 #copy{
     display: block;
-    margin: 0px 0px 10px 50px;
+    margin: 0px 0px 10px 10px;
     text-align:center;
     background-color: black;
     color: white;

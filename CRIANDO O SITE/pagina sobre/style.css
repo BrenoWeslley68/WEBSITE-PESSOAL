@@ -45,19 +45,58 @@ ul{
     justify-content: center;
 }
 li {
+    position: relative; /* Permite que o submenu seja posicionado em relação ao li */
     list-style: none;
-    margin: 15px 5px ;
-    
+    margin: 15px 5px;
+    color: var(--primary-color);
+    font-weight: bold;
+
+    /* Remove marcadores da lista e define a margem dos itens do menu */
 }
 li > a {
     color: white;
     text-decoration: none;
     margin: 0px 15px
 }
+
+li#li:hover {
+    background-color: black;
+    color: var(--primary-color);
+}
 li:hover{
     background-color: #009CF5;
     transition-duration: 0.5s;
     border-radius: 10px;
+}
+#submenu {
+    display: none; /* Oculta o submenu por padrão */
+    position: absolute; /* Posiciona o submenu de forma absoluta em relação ao item pai (li) */
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    top: 100%; /* Posiciona o submenu logo abaixo do item de menu */
+    left: 0;
+    z-index: 1000; /* Garante que o submenu apareça sobre outros elementos */
+    width: 200px;
+}
+
+li:hover #submenu {
+    display: block; /* Exibe o submenu quando o mouse está sobre o item do menu */
+}
+
+#submenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+    /* Estiliza os links dentro do submenu: cor branca, sem sublinhado, exibido como bloco e com margem */
+}
+
+#submenu a:hover {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-left: 20px;
+    /* Estiliza os links dentro do submenu quando o mouse passa sobre eles: muda a cor de fundo e adiciona padding */
 }
 
 article{
@@ -66,7 +105,7 @@ article{
     padding: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin: 20px 20px 0px 20px;
+    margin: 20px 10px 0px 10px;
     
     
 }
@@ -77,7 +116,7 @@ article > p {
 section#main{
     display: flex;
     flex-direction: column;
-    margin-left: 1%;
+    margin-left: 2%;
     
 }
 div.artigo{
@@ -95,6 +134,7 @@ div.artigo{
 }
 div.artigo > p {
     text-shadow: none;
+    margin-bottom: 20px;
 }
 section.titulo{
     
