@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+        <p>Preencha com as suas informações</p>
+        <hr>
+    </header>
+    
+    <main>
+        <section>
+            <form action="#">
+                <p class="preencher">
+                    <label for="inome"><strong>Nome</strong></label>
+                    <input type="text" name="Nome" id="inome" placeholder="Seu nome">
+                </p>
+                <p class="preencher">
+                    <label for="iemail"><strong>Email</strong>:</label>
+                    <input type="email" name="email" id="iemail" placeholder="Seu melhor Email">
+                </p>
+                <p class="preencher">
+                    <label for="iidade"><strong>Idade</strong></label>
+                    <input type="number" name="idade" id="iidade" placeholder="Sua idade">
+                </p>
+                
+                <p>
+                    <strong>Sexo:</strong>
+                    <input type="radio" name="sexo" id="msexo" checked>
+                    <label for="msexo" >Masculino</label>
+                    <input type="radio" name="sexo" id="fsexo">
+                    <label for="fsexo">Feminino</label>
+                </p>
+                
+                <p id="cad">
+                    <input type="button" value="Cadastrar" onclick="Cadastrar()"> <input type="reset" value="Limpar" onclick="Limpar()">
+                </p>
+                <div id="res"></div>
+            
+            </form>
+        </section>
+    </main>
+    <footer>
+        
+        <p>Breno Weslley</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

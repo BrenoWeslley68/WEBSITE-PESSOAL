@@ -1,0 +1,91 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Times New Roman', Times, serif;
+   
+}
+
+body{ 
+    background-color: #0B0B18;
+    color: white; 
+    text-align: center;
+    margin-top: 40px;
+    
+   
+}
+h1{
+    font-size: 4em;
+    margin: 10px 0px 10px 0px
+}
+header{
+    background-color: black;
+    width: 800px;
+    margin: auto;
+    display: block;
+    padding-top: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+header > p {
+    font-size: 2em;
+    margin-bottom: 20px;
+    }
+hr{
+    width: 50%;
+    display: block;
+    margin: auto;
+   
+    
+
+}
+form{
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 10px;
+}
+form > p {
+    margin: 10px 0px 0px 0px;
+    font-size: 1.5em;
+}
+label{
+    margin-right: 10px;
+}
+input{
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+p.preencher {
+    font-size: 2em;
+    padding: 20px;
+    margin: 0px;
+}
+
+#cad > input {
+    padding: 10px 30px 10px 30px;
+    font-size: 1.1em  ;
+    margin-top: 30px;
+}
+#cad > input:hover {
+    background-color: lightgreen;
+    color: black;
+    transition-duration: 0.5s;
+    border: 2px solid white;
+    
+}
+footer{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 1.5em;
+    background-color: black;
+    width: 800px;
+    margin: auto;
+    display: block;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+main{
+    background-color: black;
+    width: 800px;
+    margin: auto;
+    display: block;
+}
