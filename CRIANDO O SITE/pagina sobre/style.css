@@ -13,6 +13,11 @@ body{
     background-image: linear-gradient(to bottom, rgb(71, 71, 71),rgb(177, 177, 177));
     
 }
+#imgbody{
+    background-image: url(../pexels-tec2582937.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 div#head{
     display: flex;
     flex-direction: row;
@@ -99,6 +104,7 @@ li:hover #submenu {
     /* Estiliza os links dentro do submenu quando o mouse passa sobre eles: muda a cor de fundo e adiciona padding */
 }
 
+
 article{
     background-color: var(--second-color);
     color: white;
@@ -112,6 +118,11 @@ article{
 article > p {
     line-height: 23px;
     
+}
+#imgarticle {
+    background-image: url(../pexels-pixabay-270360.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 section#main{
     display: flex;

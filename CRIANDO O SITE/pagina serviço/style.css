@@ -10,9 +10,15 @@
     --second-color: #2B3033;
 }
 body{
+    
     width: 100%;
     background-image: linear-gradient(to bottom, rgb(71, 71, 71),rgb(177, 177, 177));
     
+}
+#imgbody{
+    background-image: url(../pexels-tec2582937.jpg);
+    background-size: cover;
+    background-repeat: no;
 }
 div#head{
     display: flex;

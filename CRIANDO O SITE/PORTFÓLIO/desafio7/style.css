@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    text-align: center;
+    margin-top: 30px;
+
+}
+header{
+    margin-bottom: 10px;
+}
+h1{margin-bottom: 20px;}
+
+#itarefa{
+    width: 300px;
+    font-size: 1.2em;
+    padding: 26px 60px 26px 60px;
+    margin-right: -5px;
+}
+#add{
+    background-color: rgb(4, 114, 4);
+    font-weight: bold;
+    padding: 31px 60px 29px 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#add:hover{
+    background-color: rgb(10, 173, 10);
+}
+section{
+    width: 600px;
+    margin: auto;
+}
+.item {
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+}
+.itemicone{
+    width: 9%; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.itemnome{
+    width: 70%;
+    
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.itembotao{
+   width: 21%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+}
+#delete{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: 1px solid black;
+    
+    padding: 5px;
+}
+.itemclicado {
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: rgba(150, 243, 122, 0.39);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+   
+    
+}
+#check{
+    color: white;
+    background-color: green;
+    border-radius: 20px;
+    
+}
+.itemnomeclicado{
+    width: 70%;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration-line:line-through;
+    color: rgb(43, 43, 43);
+    
+}
+
+
+
