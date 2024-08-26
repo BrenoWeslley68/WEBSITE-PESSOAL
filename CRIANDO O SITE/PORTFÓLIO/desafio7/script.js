@@ -4,16 +4,15 @@ let btnAdd = document.getElementById('btn-add');
 let main = document.getElementById('areaLista');
 
 function addTarefa() {
-    // Pegar o valor digitado no input
     let valorInput = input.value;
-    // Se não for vazio, nulo ou indefinido
     if (valorInput !== '' && valorInput !== null && valorInput !== undefined) {
         ++contador;
-        let novoItem = `<div id="${contador}" class="item">
-            <div onclick="marcarTarefa(${contador})" class="item-icone">
+        // Alterado: A função `checar` é chamada apenas ao clicar na div `.item`, não em cada parte do item individualmente
+        let novoItem = `<div id="${contador}" class="item" onclick="checar(${contador})">
+            <div class="item-icone">
                 <input type="checkbox" id="itemclicado${contador}">
             </div>
-            <div onclick="marcarTarefa(${contador})" class="item-nome">
+            <div class="item-nome">
                 ${valorInput}
             </div>
             <div class="item-botao">
@@ -22,11 +21,24 @@ function addTarefa() {
                 </button>
             </div>
         </div>`;
-        // Adicionar novo item no main
         main.innerHTML += novoItem;
-        // Zerar os campos
         input.value = '';
         input.focus();
+    }
+}
+
+function checar(id) {
+    let item = document.getElementById(id);
+    let checkbox = document.getElementById('itemclicado' + id);
+    
+    // Alterna o estado do checkbox
+    checkbox.checked = !checkbox.checked;
+    
+    // Adiciona ou remove a classe 'clicado' com base no estado do checkbox
+    if (checkbox.checked) {
+        item.classList.add('clicado');
+    } else {
+        item.classList.remove('clicado');
     }
 }
 
@@ -47,7 +59,6 @@ function marcarTarefa(id) {
 }
 
 input.addEventListener('keyup', function(event) {
-    // Se teclou Enter (13)
     if (event.keyCode === 13) {
         event.preventDefault();
         btnAdd.click();
