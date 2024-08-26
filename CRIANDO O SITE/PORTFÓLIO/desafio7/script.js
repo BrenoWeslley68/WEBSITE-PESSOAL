@@ -30,7 +30,7 @@ function addTarefa() {
 function checar(id) {
     let item = document.getElementById(id);
     let checkbox = document.getElementById('itemclicado' + id);
-    
+    item.parentNode.appendChild(item)
     // Alterna o estado do checkbox
     checkbox.checked = !checkbox.checked;
     
