@@ -1,28 +1,31 @@
-@charset "UTF8";
-
-        .calculadora {
-            max-width: 200px;
-            margin: 100px auto;
-            padding: 10px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .display {
-            width: 100%;
-            height: 40px;
-            margin-bottom: 10px;
-            text-align: right;
-            font-size: 1.5em;
-        }
-        .botoes {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-        button {
-            padding: 10px;
-            font-size: 1.2em;
-            cursor: pointer;
-        }
- 
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2em;
+}
+header{
+    margin-bottom: 30px;
+}
+input#icampo{
+    width: 350px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: solid black 2px;
+}
+.tecla{
+    padding: 30px;
+    margin: 10px;
+}
+section{
+    background-color: rgb(180, 180, 180);
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    
+}

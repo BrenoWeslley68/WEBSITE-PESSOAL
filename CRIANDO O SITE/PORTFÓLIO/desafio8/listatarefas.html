@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Simples</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculadora">
-        <input type="text" id="display" class="display" disabled>
-        <div class="botoes">
-            <button onclick="adicionarNumero('7')">7</button>
-            <button onclick="adicionarNumero('8')">8</button>
-            <button onclick="adicionarNumero('9')">9</button>
-            <button onclick="adicionarOperacao('/')">/</button>
-            <button onclick="adicionarNumero('4')">4</button>
-            <button onclick="adicionarNumero('5')">5</button>
-            <button onclick="adicionarNumero('6')">6</button>
-            <button onclick="adicionarOperacao('*')">*</button>
-            <button onclick="adicionarNumero('1')">1</button>
-            <button onclick="adicionarNumero('2')">2</button>
-            <button onclick="adicionarNumero('3')">3</button>
-            <button onclick="adicionarOperacao('-')">-</button>
-            <button onclick="adicionarNumero('0')">0</button>
-            <button onclick="limpar()">C</button>
-            <button onclick="calcular()">=</button>
-            <button onclick="adicionarOperacao('+')">+</button>
-        </div>
-    </div>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <main>
+        <section>
+            <p>
+                <input type="number" name="campo" id="icampo">
+                <input onclick="adicionarNu('7')" id="sete" class="tecla" type="button" value="7">
+                <input id="oito" onclick="adicionarNu('8')"  class="tecla" type="button" value="8">
+                <input id="nove" onclick="adicionarNu('9')" class="tecla" type="button" value="9">
+                <input id="dividir" onclick="adicionarDividir('/')" class="tecla" type="button" value="/">
+            </p>
+            <p>
+                <input id="quatro" onclick="adicionarNu('4')" class="tecla" type="button" value="4">
+                <input id="cinco" onclick="adicionarNu('5')" class="tecla" type="button" value="5">
+                <input id="seis" onclick="adicionarNu('6')" class="tecla" type="button" value="6">
+                <input id="vezes"onclick="adicionarVezes('*')"class="tecla" type="button" value="*">
+            </p>
+            <p>
+                <input id="um"onclick="adicionarNu('1')" class="tecla" type="button" value="1">
+                <input id="dois"onclick="adicionarNu('2')" class="tecla" type="button" value="2">
+                <input id="tres"onclick="adicionarNu('3')" class="tecla" type="button" value="3">
+                <input id="menos"onclick="adicionarMenos('-')" class="tecla" type="button" value="-">
+            </p>
+            <p>
+                <input id="zero"onclick="adicionarNu('0')" class="tecla" type="button" value="0">
+                <input id="limpa"onclick="limpar('c')" class="tecla" type="button" value="C">
+                <input id="igual"onclick="resultado('=')" class="tecla" type="button" value="=">
+                <input id="mais"onclick="adicionarMais('+')" class="tecla" type="button" value="+">
+            </p>
+        </section>
+    </main>
+    
 
-    <script src="calculadora.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

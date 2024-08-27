@@ -1,32 +1,54 @@
-let display = document.getElementById('display');
-let operacaoAtual = '';
-let novoNumero = true;
+let input = document.getElementById('icampo')
+let calculaNumero = true
+operacaoAtual = ''
 
-function adicionarNumero(numero) {
-    if (novoNumero) {
-        display.value = numero;
-        novoNumero = false;
+function adicionarNu(id){
+    if(calculaNumero){
+        input.value = id
+        calculaNumero = false
     } else {
-        display.value += numero;
+        input.value += id   
     }
 }
-
-function adicionarOperacao(operacao) {
-    if (!novoNumero) {
-        operacaoAtual += display.value + operacao;
-        novoNumero = true;
+function adicionarDividir(){
+    if (!calculaNumero){
+       operacaoAtual += input.value + '/'
+       input.value = ''
+       calculaNumero = true  
     }
 }
-
-function calcular() {
-    operacaoAtual += display.value;
-    display.value = eval(operacaoAtual);
-    operacaoAtual = '';
-    novoNumero = true;
+function adicionarVezes(){
+    if (!calculaNumero){
+        operacaoAtual += input.value + '*'
+        input.value = ''
+        calculaNumero = true
+    }
 }
+function adicionarMenos(id){
+    if (!calculaNumero){
+        operacaoAtual += input.value + '-'
+        input.value = ''
+        calculaNumero = true
+    }
+}
+function adicionarMais(id){
 
-function limpar() {
-    display.value = '';
+    if (!calculaNumero){
+        operacaoAtual += input.value + '+'
+        input.value = ''
+        calculaNumero = true 
+    } 
+}
+function limpar(){
+    input.value = ''
+    operacaoAtual = ''
+    calculaNumero = true
+}
+function resultado() {
+    if(!calculaNumero){
+    operacaoAtual += input.value;
+    input.value = eval(operacaoAtual);
     operacaoAtual = '';
     novoNumero = true;
+    }
 }
