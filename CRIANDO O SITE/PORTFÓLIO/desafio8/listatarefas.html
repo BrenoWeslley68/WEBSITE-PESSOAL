@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
     <header>
@@ -17,25 +18,25 @@
                 <input onclick="adicionarNu('7')" id="sete" class="tecla" type="button" value="7">
                 <input id="oito" onclick="adicionarNu('8')"  class="tecla" type="button" value="8">
                 <input id="nove" onclick="adicionarNu('9')" class="tecla" type="button" value="9">
-                <input id="dividir" onclick="adicionarDividir('/')" class="tecla" type="button" value="/">
+                <input id="dividir" onclick="adicionarDividir()" class="tecla" type="button" value="/">
             </p>
             <p>
                 <input id="quatro" onclick="adicionarNu('4')" class="tecla" type="button" value="4">
                 <input id="cinco" onclick="adicionarNu('5')" class="tecla" type="button" value="5">
                 <input id="seis" onclick="adicionarNu('6')" class="tecla" type="button" value="6">
-                <input id="vezes"onclick="adicionarVezes('*')"class="tecla" type="button" value="*">
+                <input id="vezes"onclick="adicionarVezes()"class="tecla" type="button" value="*">
             </p>
             <p>
                 <input id="um"onclick="adicionarNu('1')" class="tecla" type="button" value="1">
                 <input id="dois"onclick="adicionarNu('2')" class="tecla" type="button" value="2">
                 <input id="tres"onclick="adicionarNu('3')" class="tecla" type="button" value="3">
-                <input id="menos"onclick="adicionarMenos('-')" class="tecla" type="button" value="-">
+                <input id="menos"onclick="adicionarMenos()" class="tecla" type="button" value="-">
             </p>
             <p>
                 <input id="zero"onclick="adicionarNu('0')" class="tecla" type="button" value="0">
-                <input id="limpa"onclick="limpar('c')" class="tecla" type="button" value="C">
-                <input id="igual"onclick="resultado('=')" class="tecla" type="button" value="=">
-                <input id="mais"onclick="adicionarMais('+')" class="tecla" type="button" value="+">
+                <input id="limpa"onclick="limpar()" class="tecla" type="button" value="C">
+                <input id="igual"onclick="resultado()" class="tecla" type="button" value="=">
+                <input id="mais"onclick="adicionarMais()" class="tecla" type="button" value="+">
             </p>
         </section>
     </main>
@@ -43,5 +44,7 @@
 
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
 </body>
 </html>

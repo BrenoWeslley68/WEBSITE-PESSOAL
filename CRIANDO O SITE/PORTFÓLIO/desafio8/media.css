@@ -1,0 +1,15 @@
+@media screen and (max-width: 700px) {
+    section{
+        width: 300px;
+    }
+    input#icampo{
+        width: 250px;
+}
+.tecla{
+    padding: 20px;
+    margin: 5px;
+}
+h1{
+    font-size: 1.5em;
+}
+}

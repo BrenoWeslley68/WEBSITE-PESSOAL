@@ -13,9 +13,11 @@ header{
 }
 input#icampo{
     width: 350px;
-    padding: 20px;
+    padding:  10px;
     margin-bottom: 10px;
     border: solid black 2px;
+    border-radius: 5px;
+    font-size: 1.5em;
 }
 .tecla{
     padding: 30px;

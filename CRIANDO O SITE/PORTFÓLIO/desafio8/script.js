@@ -1,54 +1,53 @@
-let input = document.getElementById('icampo')
-let calculaNumero = true
-operacaoAtual = ''
+let input = document.getElementById('icampo');
+let = operacaoAtual = ''
+let calcula = true
 
 function adicionarNu(id){
-    if(calculaNumero){
+    if(calcula){
         input.value = id
-        calculaNumero = false
+    calcula = false
     } else {
-        input.value += id   
+        input.value += id
     }
 }
+
 function adicionarDividir(){
-    if (!calculaNumero){
-       operacaoAtual += input.value + '/'
-       input.value = ''
-       calculaNumero = true  
+    if (!calcula){
+        operacaoAtual += input.value + '/'
+        input.value = ''
+        calcula = true
     }
 }
 function adicionarVezes(){
-    if (!calculaNumero){
+    if (!calcula){
         operacaoAtual += input.value + '*'
         input.value = ''
-        calculaNumero = true
+        calcula = true
     }
 }
-function adicionarMenos(id){
-    if (!calculaNumero){
+function adicionarMenos(){
+    if (!calcula){
         operacaoAtual += input.value + '-'
         input.value = ''
-        calculaNumero = true
+        calcula = true
     }
 }
-function adicionarMais(id){
-
-    if (!calculaNumero){
+function adicionarMais(){
+    if (!calcula){
         operacaoAtual += input.value + '+'
         input.value = ''
-        calculaNumero = true 
-    } 
+        calcula = true
+    }
 }
+
 function limpar(){
     input.value = ''
     operacaoAtual = ''
-    calculaNumero = true
+    calcula = true
 }
-function resultado() {
-    if(!calculaNumero){
-    operacaoAtual += input.value;
-    input.value = eval(operacaoAtual);
-    operacaoAtual = '';
-    novoNumero = true;
-    }
+function resultado(){
+    operacaoAtual += input.value
+    input.value = eval(operacaoAtual)
+    operacaoAtual = ''
+    calcula = true
 }
